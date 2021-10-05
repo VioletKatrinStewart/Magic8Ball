@@ -11,15 +11,23 @@ const randomAnswer = document.getElementById('random-answer');
 const resetButton = document.getElementById('reset-button');
 
 function shake () {
-  var answerButton = document.getElementById("answer-button")
-
-answerButton.classList.add('shake')
+ console.log(answerButton);
+answerButton.classList.add('shake');
 setTimeout(function(){answerButton.classList.remove('shake');}, 1000 )
-setTimeout(function(){answers();}, 1000)
-
+console.log(answerButton);
 }
 
 answerButton.addEventListener('click', ()=> {
+  // //function shake () {
+  //   var answerButton = document.getElementById("answer-button")
+  //  console.log(answerButton);
+  // answerButton.classList.add('shake')
+  // //setTimeout(function(){answerButton.classList.remove('shake');}, 1000 )
+  // console.log(answerButton);
+  // }
+  
+  shake();
+
   const randomIndex = getRandomNumber(answers.length);
   randomAnswer.textContent = randomIndex;
 

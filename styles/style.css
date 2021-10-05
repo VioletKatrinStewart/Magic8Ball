@@ -20,7 +20,7 @@ p {
     filter: drop-shadow(30px 10px 4px #4444dd);
 }
 
-#answer-button {
+.shake {
 animation: shake 1s;
 
 }
