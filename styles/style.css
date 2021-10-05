@@ -18,9 +18,21 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    font-family: 'Creepster', cursive;
+    color: rgb(77, 30, 30)
+
 }
+h2 {
+    filter: drop-shadow(30px 10px 4px #4444dd);
+};
+
+p {
+    filter: drop-shadow(30px 10px 4px #4444dd);
+};
+
+#image-1 { width: 50px;
+
+};
 
 main {
     display: flex;
@@ -111,3 +123,5 @@ footer {
     }
 
   }
+
+  
