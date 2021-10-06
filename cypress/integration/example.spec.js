@@ -1,12 +1,19 @@
 
-describe('Example Test', ()=>{
-    before(()=>{
+describe('Example Test', () => {
+    before(() => {
         cy.visit('/');
     });
 
-    describe('HTML elements', ()=>{   
-        it('contains the alchemy logo', ()=>{
-            cy.get('.main-logo').should('be.visible');
+    describe('body', () => {
+        it('contains a body', () => {
+            cy.get('body').should('be.visible');
+        });
+        it('contains h2', () => {
+            cy.get('h2').should('be.visible');
+        });
+        it('contains input box', () => {
+            cy.get('#input-question').should('be.visable');
         });
     });
+
 });
